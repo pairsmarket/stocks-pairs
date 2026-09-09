@@ -1,0 +1,37 @@
+# ── Never ────────────────────────────────────────────────────────────────
+# Anything that could hold a key. The suffixed forms are here because a
+# plain `*.bak` misses `settings.js.bak-legacy`, which is exactly how two
+# backup files ended up committed to the repo this was extracted from.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*keypair*.json
+*privkey*
+id.json
+wallet.json
+*.bak
+*.bak-*
+*.bak.*
+*.orig
+*.old
+
+# ── Runtime state ────────────────────────────────────────────────────────
+# stockConfigs.json holds public config addresses, but it is machine state
+# and two machines will disagree about it.
+data/
+*.log
+
+# ── Dependencies & tooling ───────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+coverage/
+.nyc_output/
+
+# ── Editors & OS ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

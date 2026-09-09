@@ -1,0 +1,31 @@
+{
+  "name": "pairsmarket",
+  "version": "0.1.0",
+  "description": "Quote a Meteora dynamic bonding curve in a tokenized stock instead of SOL.",
+  "license": "MIT",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js",
+    "badges": "node scripts/badge-check.js"
+  },
+  "keywords": [
+    "solana",
+    "meteora",
+    "dynamic-bonding-curve",
+    "xstocks",
+    "token-2022"
+  ],
+  "dependencies": {
+    "@meteora-ag/dynamic-bonding-curve-sdk": "^1.5.12",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.4",
+    "axios": "^1.6.2",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2"
+  }
+}
