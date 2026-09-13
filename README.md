@@ -1,5 +1,3 @@
-PFqgqfFYB6abhwHcy1NgM6JB7uVKqVcNMJXhw4jpair
-
 # pairsmarket
 
 Quote a Meteora dynamic bonding curve in a tokenized stock instead of SOL.
